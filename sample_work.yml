@@ -1,0 +1,13 @@
+---
+  - name: "Sample work playbok"
+    hosts: localhost
+
+    tasks:
+
+        - name: "reachability test"
+          ping:
+
+        - name: "find module"
+          find:
+            path: /Volumes/DATA/Learning/AnsibleBeginner/sample
+            file_type: file
